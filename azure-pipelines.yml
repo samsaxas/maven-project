@@ -22,15 +22,15 @@ steps:
     goals: 'package'
 
 
-  - task: PublishTestResults@2
-    inputs:
-      testResultsFiles: '/target/surefire-reports/TEST-*.xml'
-      mergeTestResults: true
-      testRunTitle: 'Maven Unit Test Results'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '/target/surefire-reports/TEST-*.xml'
+    mergeTestResults: true
+    testRunTitle: 'Maven Unit Test Results'
 
-  - task: PublishBuildArtifacts@1
-    inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      ArtifactName: 'MyArtifact'
-      publishLocation: 'FilePath'
-      TargetPath: 'C:\MyLocalArtifacts\$(Build.BuildNumber)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'MyArtifact'
+    publishLocation: 'FilePath'
+    TargetPath: 'C:\MyLocalArtifacts\$(Build.BuildNumber)'
