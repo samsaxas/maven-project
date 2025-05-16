@@ -13,9 +13,9 @@ steps:
 
 - task: JavaToolInstaller@1
   inputs:
-    versionSpec: '21'
+    versionSpec: '11'
     jdkArchitecture: 'x64'
-    javaHomeVariable: 'JAVA_HOME_21_X64'
+    javaHomeVariable: 'JAVA_HOME_11_X64'
 
 - task: Maven@3
   inputs:
