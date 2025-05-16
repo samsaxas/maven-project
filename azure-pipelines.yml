@@ -16,6 +16,7 @@ steps:
   inputs:
     versionSpec: '11'
     jdkArchitectureOption: 'x64'
+    jdkArchitecture: 'x64'
     javaHomeVariable: 'JAVA_HOME_11_X64'
 - task: Maven@3
   inputs:
