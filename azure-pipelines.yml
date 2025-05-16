@@ -10,6 +10,13 @@ pool: Sam
 
 
 steps:
+
+- task: JavaToolInstaller@1
+  inputs:
+    versionSpec: '21'
+    jdkArchitecture: 'x64'
+    javaHomeVariable: 'JAVA_HOME_21_X64'
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'mvn_project1/pom.xml'
