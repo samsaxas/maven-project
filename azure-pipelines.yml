@@ -18,7 +18,7 @@ steps:
     versionSpec: '11.0.22'
     jdkArchitectureOption: 'x64'
     jdkArchitecture: 'x64'
-    javaHomeVariable: 'JAVA_HOME_11_X64'
+    javaHomeVariable: 'JAVA_HOME_11'
 - task: Maven@3
   inputs:
     mavenPomFile: 'mvn_project1/pom.xml'
