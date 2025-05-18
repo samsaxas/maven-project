@@ -15,7 +15,7 @@ steps:
 - task: JavaToolInstaller@1
   inputs:
     jdkSourceOption: 'InternetDownload'
-    versionSpec: '11.0.22'
+    versionSpec: '11'
     jdkArchitectureOption: 'x64'
     jdkArchitecture: 'x64'
     javaHomeVariable: 'JAVA_HOME_11'
