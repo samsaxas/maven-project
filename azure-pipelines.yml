@@ -41,5 +41,4 @@ steps:
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'MyArtifact'
-    publishLocation: 'FilePath'
-    TargetPath: 'C:\MyLocalArtifacts\$(Build.BuildNumber)'
+    publishLocation: 'Container'
