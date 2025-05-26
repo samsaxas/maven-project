@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: Sam
+pool: Sam1
 
 
 steps:
@@ -15,7 +15,7 @@ steps:
 - task: JavaToolInstaller@1
   inputs:
     jdkSourceOption: 'InternetDownload'
-    versionSpec: '11'
+    versionSpec: '21'
     jdkArchitectureOption: 'x64'
     jdkArchitecture: 'x64'
     javaHomeVariable: 'JAVA_HOME_11'
